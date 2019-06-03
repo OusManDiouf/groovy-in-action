@@ -26,7 +26,7 @@ class Mother {
 
     def prop = 'prop'
 
-    def method() { 'method' }
+    static def method() { 'method' }
 
 //    une méthode retournant une closure n'est pas trés courrante mais au besoin...
     Closure birth(param) {
@@ -131,7 +131,7 @@ map.with { // ici le delegate, c'est map !
 //}
 
 // succint
-def func(n) { { i -> n+=i} }
+static def func(n) { { i -> n+=i} }
 
 def accumulator = func(10)
 
